@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+h1 {
+  color: rgb(25, 38, 31);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.add-task-class {
+  display: flex;
+}
+.task-description {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.75em;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+  width: 24em;
+}
+#add-task {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 0 5px;
+  border-radius: 0 5px 5px 0;
+}
+.task-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin-top: 20px;
+}
+
+.task-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  outline: none;
+  resize: none;
+  width: 20em;
+  padding: 5px;
+  background-color: #eff3de;
+  border: 1px #000;
+  border-radius: 5px;
+}
+.action {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.edit,
+.delete,
+.inprogress,
+.completed,
+.save {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5%;
+  padding: 0.25em;
+  border: none;
+  transition: 0.25s ease-out;
+  border-radius: 5px;
+}
+.edit:hover,
+.delete:hover,
+.inprogress:hover,
+.completed:hover,
+.save {
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 1px black;
+}
+.delete {
+  background-color: red;
+  margin: 2px 0;
+}
+.edit {
+  background-color: blue;
+}
+.completed {
+  background-color: green;
+}
+.inprogress {
+  background-color: rgb(249, 163, 4)
+}
+.save {
+    background-color: rgb(15, 179, 244);
+}
+.display-none{
+    display: none;
+}
